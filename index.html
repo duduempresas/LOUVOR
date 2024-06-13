@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louvando ao Senhor Jesus</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background: url('./terra..gif') no-repeat center center fixed; /* Caminho para sua imagem */
+            background-size: cover;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com opacidade */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        main {
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .video-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .video {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video h2 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .like-button {
+            background-color: #4cafa7;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .like-button:hover {
+            background-color: #45a049;
+        }
+
+        .top-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; /* Escondido por padrão */
+            z-index: 3;
+        }
+
+        .top-button:hover {
+            background-color: #1aa72c;
+     
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Louvando ao Senhor Jesus</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+          
+            <li><a href="#">salmo narrado pro cid moreira</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="video-gallery">
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./video01.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>Louvores de Adoração 2024</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./02.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>Só Jesus Faz</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+            <!-- Mais vídeos podem ser adicionados aqui -->
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./04.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>A Carta</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+        </section>
+        
+        <section id="adoracao" class="video-gallery">
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./05.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>Acima das Estrelas</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./06.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>O Sobrenatural</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+            <!-- Mais vídeos podem ser adicionados aqui -->
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./7.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>Nada Está Perdido</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+        </section>
+        
+        <section id="louvor" class="video-gallery">
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./08.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>No Tempo D'ele</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./09.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>Vendavais</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+            <!-- Mais vídeos podem ser adicionados aqui -->
+            <article class="video">
+                <video width="320" height="240" controls>
+                    <source src="./10.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <h2>Deus Dará de Volta Tudo Pra Você</h2>
+                <button class="like-button" onclick="likeVideo(this)">Curtir <span class="like-count">0</span></button>
+            </article>
+        </section>
+    </main>
+    <button class="top-button" onclick="scrollToTop()">Voltar para o Topo</button>
+    <script>
+        function likeVideo(button) {
+            var likeCount = button.querySelector('.like-count');
+            likeCount.textContent = parseInt(likeCount.textContent) + 1;
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function() {
+            var topButton = document.querySelector('.top-button');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
+``
